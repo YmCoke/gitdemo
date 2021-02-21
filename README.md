@@ -40,3 +40,6 @@ workspace: 工作区(即平时修改文件后文件就都会被放到工作区�
 ```git reset --hard HEAD~x```: 表示将版本回退到x个版本前
 
 ```git reset --hard commit-id```: 表示将版本回退到指定commit-id的版本
+
+```git checkout -- 文件名```: 表示将当前处于**repository**的文件取出, 替换掉当前**工作区**的文件. 即当前工作区该文件所做的修改都废弃了.
+
