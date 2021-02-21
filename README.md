@@ -19,10 +19,21 @@ workspace: 工作区(即平时修改文件后文件就都会被放到工作区�
 
 ```git clone 地址```: 克隆master上最新的项目代码
 
+```git status```: 查看当前仓库中各个文件的状态
+
 ```git add 文件名```: 将workspace中的文件提交到stage处
 
 ```git commit -m "提交信息"```: 将stage处的文件提交到repository（提交信息是可以不写的， 但**不推荐不写!**，提交信息可以在代码需要回退时提供信息说明）
 
 ```git push```: 将repository的文件提交到remote上
 
-以上四条指令对应上图中的四个操作，也是平时开发中最常用到的四条指令
+> 以上是平时开发中最常用到的五条指令，流程为: **workspace** -> ```git status```查看文件状态 -> ```git add .```将所有修改加入到**stage** -> ```git commit -m "xxx"```将代码提交到**repository** -> ```git push```将所有文件提交到**Remote**上
+
+### 版本篇
+
+```git diff 文件```: 查看文件具体修改了什么内容
+
+```git log (--pretty=oneline)```: 显示从最近到最远的提交日志(加上参数后可以过滤部分信息)
+
+> 注: 在**commit id**后面有(HEAD -> main)字样的一串是提示你当前默认分支位于哪一个commit上
+
