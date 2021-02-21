@@ -1,7 +1,3 @@
-hello, I am coke.
+create a new branch 'dev'.
 
-i am a boy.
-
-Git升级了
-
-new chagnge
+modify branch 'dev'.
